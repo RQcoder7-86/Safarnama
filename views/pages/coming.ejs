@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coming Soon | SafarNama</title>
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <%- include('partials/preloderi-mini') %>
+  <%- include('partials/header') %>
+
+  <section class="coming-soon">
+    <!-- Background video -->
+    <video autoplay muted loop class="bg-video">
+      <source src="/videos/coming2.mp4" type="video/mp4" />
+    </video>
+
+    <!-- Background music -->
+    <audio id="bg-music" loop>
+      <source src="/videos/imr2.mp3" type="audio/mp3" /> 
+    </audio>
+
+    <!-- Particle effect -->
+    <div id="particles-js"></div>
+
+    <!-- Dark Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Main Content -->
+    <div class="glass-content">
+      <h1>Coming <span>Soon</span></h1>
+      <p>Something amazing is launching very soon. Get ready for adventure!</p>
+
+      <div class="countdown" id="countdown">
+        <div><span id="days">00</span><small>Days</small></div>
+        <div><span id="hours">00</span><small>Hours</small></div>
+        <div><span id="minutes">00</span><small>Minutes</small></div>
+        <div><span id="seconds">00</span><small>Seconds</small></div>
+      </div>
+
+      <form class="notify-form">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Notify Me</button>
+      </form>
+
+      <!-- ✅ Single Music Toggle Button -->
+      <button id="music-toggle" class="music-toggle">🔊 Play Music</button>
+    </div>
+  </section>
+
+  <%- include('partials/footer') %>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script>
+    // Countdown timer
+    const targetDate = new Date(Date.now() + 10 * 24 * 60 * 60 * 1000).getTime();
+    const countdown = () => {
+      const now = new Date().getTime();
+      const gap = targetDate - now;
+      const second = 1000, minute = second * 60, hour = minute * 60, day = hour * 24;
+      const d = Math.floor(gap / day);
+      const h = Math.floor((gap % day) / hour);
+      const m = Math.floor((gap % hour) / minute);
+      const s = Math.floor((gap % minute) / second);
+      document.getElementById("days").innerText = d;
+      document.getElementById("hours").innerText = h;
+      document.getElementById("minutes").innerText = m;
+      document.getElementById("seconds").innerText = s;
+    };
+    setInterval(countdown, 1000);
+
+    // Particle background
+    particlesJS("particles-js", {
+      "particles": {
+        "number": { "value": 60 },
+        "color": { "value": "#ffffff" },
+        "shape": { "type": "circle" },
+        "opacity": { "value": 0.3 },
+        "size": { "value": 3 },
+        "line_linked": { "enable": true, "distance": 150, "color": "#ffffff", "opacity": 0.2, "width": 1 },
+        "move": { "enable": true, "speed": 2 }
+      }
+    });
+
+    // Music toggle logic
+    const music = document.getElementById("bg-music");
+    const toggleBtn = document.getElementById("music-toggle");
+
+    toggleBtn.addEventListener("click", () => {
+      if (music.paused) {
+        music.play()
+          .then(() => {
+            toggleBtn.textContent = "🔇 Mute Music";
+          })
+          .catch(err => {
+            console.log("Autoplay blocked:", err);
+          });
+      } else {
+        music.pause();
+        toggleBtn.textContent = "🔊 Play Music";
+      }
+    });
+  </script>
+</body>
+</html>

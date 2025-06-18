@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQs - SafarNama</title>
+     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">  
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <%- include('partials/preloderi-mini') %>
+  <%- include("./partials/header") %>
+
+  <section class="faqs-section">
+    <h1 class="faqs-heading">Frequently Asked Questions</h1>
+    <p class="faqs-subheading">Find answers to the most common travel queries</p>
+
+    <div class="faq-container">
+      <div class="faq-item">
+        <button class="faq-question">How can I book a travel package?</button>
+        <div class="faq-answer">
+          <p>You can book any package directly through our website by clicking the "Book Now" button or by contacting us through the contact page.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">What payment methods do you accept?</button>
+        <div class="faq-answer">
+          <p>We accept online bank transfers, EasyPaisa, JazzCash, and cash payments in person at our office.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Can I customize a group tour?</button>
+        <div class="faq-answer">
+          <p>Absolutely! We offer full customization for family and group tours based on your preferences.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Do you provide travel insurance?</button>
+        <div class="faq-answer">
+          <p>Travel insurance is not included by default, but we can arrange it upon request.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Need Help Box -->
+    <div class="help-box">
+      <h3>Need Help?</h3>
+      <p>If your question isn't listed here, feel free to reach out to our support team.</p>
+      <a href="/contact" class="help-btn"><i class="fas fa-headset"></i> Contact Support</a>
+    </div>
+  </section>
+
+  <%- include("./partials/footer") %>
+
+  <script>
+    // Accordion toggle logic
+    const questions = document.querySelectorAll('.faq-question');
+
+    questions.forEach(q => {
+      q.addEventListener('click', () => {
+        const answer = q.nextElementSibling;
+        answer.classList.toggle('active');
+        q.classList.toggle('open');
+      });
+    });
+  </script>
+
+</body>
+</html>

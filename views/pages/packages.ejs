@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SafarNama Packages</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+  <!-- AOS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <%- include('partials/preloderi-mini') %>
+  <%- include("./partials/header") %>
+  <!-- ===== Hero Section ===== -->
+
+  <!-- ===== Hero Section ===== -->
+  <section class="packages-hero">
+    <video autoplay muted loop playsinline class="hero-bg-video">
+      <source src="/videos/video3.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-text" data-aos="zoom-in" data-aos-duration="1200">
+      <h1>Explore Pakistan with Us</h1>
+      <p>Handpicked travel packages crafted for your next adventure.</p>
+    </div>
+  </section>
+
+  <!-- ===== Packages Section ===== -->
+  <section class="packages container">
+    <h2 class="section-title" data-aos="fade-up">Top Travel Packages</h2>
+
+    <div class="cards-grid">
+
+      <!-- Example Card -->
+    <div class="package-card" data-aos="fade-up" data-aos-delay="100">
+  <img src="/images/skp.jpg" alt="Skardu">
+  <div class="card-content">
+    <h3>Skardu Escape</h3>
+    <p>Valleys, lakes, and breathtaking scenery await you in Skardu.</p>
+    <div class="card-footer">
+      <span class="price">PKR 38,000</span>
+      <a href="/booking" class="btn-book">Book Now</a>
+    </div>
+  </div>
+</div>
+
+
+      <!-- Repeat for all 8 packages -->
+      <!-- Hunza -->
+      <div class="package-card" data-aos="fade-up" data-aos-delay="200">
+        <img src="/images/hunpk.jpeg" alt="Hunza">
+        <div class="card-content">
+          <h3>Hunza Magic</h3>
+          <p>Forts, glaciers, and the legendary Attabad Lake await in Hunza.</p>
+          <div class="card-footer">
+            <span class="price">PKR 42,000</span>
+            <a href="/booking" class="btn-book">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Murree -->
+      <div class="package-card" data-aos="fade-up" data-aos-delay="300">
+        <img src="/images/murepk.jpeg" alt="Murree">
+        <div class="card-content">
+          <h3>Murree Hills</h3>
+          <p>Relax in the pine forests and scenic views of Murree hills.</p>
+          <div class="card-footer">
+            <span class="price">PKR 22,000</span>
+            <a href="/booking" class="btn-book">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Swat -->
+      <div class="package-card" data-aos="fade-up" data-aos-delay="400">
+        <img src="/images/skp.jpg" alt="Swat">
+        <div class="card-content">
+          <h3>Swat Serenity</h3>
+          <p>Adventure, snow, and green valleys — the Switzerland of Pakistan.</p>
+          <div class="card-footer">
+            <span class="price">PKR 33,500</span>
+            <a href="/booking" class="btn-book">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kumrat -->
+      <div class="package-card" data-aos="fade-up" data-aos-delay="500">
+        <img src="/images/kmpk.jpeg" alt="Kumrat">
+        <div class="card-content">
+          <h3>Kumrat Forest</h3>
+          <p>Deep pine forests, waterfalls, and peaceful campsites await.</p>
+          <div class="card-footer">
+            <span class="price">PKR 35,000</span>
+            <a href="/booking" class="btn-book">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chitral -->
+      <div class="package-card" data-aos="fade-up" data-aos-delay="600">
+        <img src="/images/chpk.jpeg" alt="Chitral">
+        <div class="card-content">
+          <h3>Chitral & Kalash</h3>
+          <p>Explore unique Kalash culture and majestic mountains of Chitral.</p>
+          <div class="card-footer">
+            <span class="price">PKR 40,000</span>
+            <a href="/booking" class="btn-book">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gorakh -->
+      <div class="package-card" data-aos="fade-up" data-aos-delay="700">
+        <img src="/images/babpk.jpeg" alt="Gorakh Hill">
+        <div class="card-content">
+          <h3>Gorakh Hill</h3>
+          <p>Camp under the stars at Sindh’s only hill station above the clouds.</p>
+          <div class="card-footer">
+            <span class="price">PKR 18,000</span>
+            <a href="/booking" class="btn-book">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quetta -->
+      <div class="package-card" data-aos="fade-up" data-aos-delay="800">
+        <img src="/images/qutkp.jpeg" alt="Quetta">
+        <div class="card-content">
+          <h3>Quetta Wonders</h3>
+          <p>Visit Ziarat, Hanna Lake, and savor the beauty of Balochistan.</p>
+          <div class="card-footer">
+            <span class="price">PKR 36,000</span>
+            <a href="/booking" class="btn-book">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- AOS Script -->
+
+<%- include("./partials/footer") %>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
+
+
+   

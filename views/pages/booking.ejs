@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Your Journey | SafarNama</title>
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <%- include('partials/preloderi-mini') %>
+  <%- include('partials/header') %>
+
+  <section class="booking-section">
+    <div class="form-container">
+      <h1 class="form-heading">Book Your <span>Journey</span></h1>
+      <form class="booking-form" id="bookingForm">
+        <input type="text" name="userName" class="form-input " id="phone" placeholder="Your Full Name" required />
+        <input type="email" name="userEmail" class="form-input" placeholder="Your Email Address" required />
+        <div class="form-group">
+  <label for="phone">Phone Number (PK)</label>
+  <input type="tel" id="phone" name="phone" placeholder="+92xxxxxxxxxx" pattern="^\+92\d{10}$" required />
+</div>
+
+
+        <select name="vehicleType" class="form-dropdown" required>
+          <option disabled selected>Select Vehicle</option>
+          <option>Land Cruiser</option>
+          <option>Revo</option>
+          <option>Hiace</option>
+          <option>Coaster</option>
+          <option>Helicopter</option>
+          <option>Bikers group</option>
+        </select>
+
+        <select name="destination" class="form-dropdown" required>
+          <option disabled selected>Select Destination</option>
+          <option>Hunza Valley</option>
+          <option>Swat</option>
+          <option>Skardu</option>
+          <option>Murree</option>
+          <option>Chitral</option>
+          <option>Gorakh Hill</option>
+          <option>Quetta</option>
+        </select>
+
+        <select name="tripType" class="form-dropdown" required>
+          <option disabled selected>Family or Group?</option>
+          <option>Family Trip</option>
+          <option>Group Tour</option>
+        </select>
+
+        <input type="date" name="travelDate" class="form-input" required />
+        <input type="text" name="pickupLocation" class="form-input" placeholder="Pickup Location" required />
+
+        <textarea name="preferences" class="form-textarea" placeholder="Special Travel Preferences..."></textarea>
+
+        <div class="form-summary">
+          <p class="summary-text">Please review your booking details carefully before submitting.</p>
+        </div>
+
+        <div class="form-check">
+          <input type="checkbox" id="agreeTerms" required />
+          <label for="agreeTerms">I agree to the Terms and Conditions</label>
+        </div>
+
+        <button type="submit" class="submit-btn-glow">Confirm Booking</button>
+      </form>
+    </div>
+  </section>
+
+  <%- include('partials/footer') %>
+
+  <!-- GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script>
+    gsap.from(".form-heading", { duration: 1.2, y: -60, opacity: 0, ease: "power3.out" });
+    gsap.from(".booking-form", { duration: 1.4, opacity: 0, y: 40, delay: 0.5, ease: "power2.out" });
+  </script>
+</body>
+</html>

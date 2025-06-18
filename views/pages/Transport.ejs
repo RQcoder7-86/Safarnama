@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Transport - SafarNama</title>
+  <link rel="stylesheet" href="/style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+</head>
+<body>
+    <%- include('partials/preloderi-mini') %>
+  <%- include("./partials/header") %>
+
+  <header class="transport-hero">
+    <div class="hero-content" data-aos="fade-up">
+      <h1>Explore Pakistan With Premium Transport</h1>
+      <p>Safe • Comfortable • Affordable</p>
+    </div>
+  </header>
+
+  <section class="transport-types">
+    <h2 data-aos="fade-down">Our Transport Options</h2>
+    <div class="transport-grid">
+      <!-- 6 Transport Cards -->
+      <div class="transport-card" data-aos="fade-up">
+        <img src="/images/h2.jpeg" alt="Hiace Van"/>
+        <h4>Hiace Van</h4>
+        <p>Perfect for group travel. Comfortable seating up to 15 passengers.</p>
+        <a href="/booking" class="book-btn">Book Now</a>
+      </div>
+      <div class="transport-card" data-aos="fade-up" data-aos-delay="200">
+        <img src="/images/cost.png" alt="Toyota Coaster"/>
+        <h4>Coaster</h4>
+        <p>Spacious and air-conditioned, ideal for large families or tour groups.</p>
+        <a href="booking" class="book-btn">Book Now</a>
+      </div>
+      <div class="transport-card" data-aos="fade-up" data-aos-delay="400">
+        <img src="/images/land3.avif" alt="Land Cruiser"/>
+        <h4>Land Cruiser</h4>
+        <p>Premium ride for executive travel in northern regions and hilly areas.</p>
+        <a href="/booking" class="book-btn">Book Now</a>
+      </div>
+      <div class="transport-card" data-aos="fade-up" data-aos-delay="600">
+        <img src="/images/vip.png" alt="VIP Protocol"/>
+        <h4>VIP Protocol</h4>
+        <p>Land Cruiser with escort, armed guards & professional convoy protocol.</p>
+        <a href="#" class="book-btn">Book Now</a>
+      </div>
+      <div class="transport-card" data-aos="fade-up" data-aos-delay="800">
+        <img src="/images/heli.png" alt="Helicopter"/>
+        <h4>Helicopter Transport</h4>
+        <p>Perfect for VVIP tours, aerial views, and mountain landings.</p>
+        <a href="/booking" class="book-btn">Book Now</a>
+      </div>
+      <div class="transport-card" data-aos="fade-up" data-aos-delay="1000">
+        <img src="/images/bikers.png" alt="Biking Group"/>
+        <h4>Biking Group</h4>
+        <p>Ride through the mountains with pro bikers & full support crew.</p>
+        <a href="/booking" class="book-btn">Book Now</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="why-choose">
+    <h2 data-aos="fade-right">Why Choose SafarNama Transport?</h2>
+    <div class="features">
+      <div class="feature-item" data-aos="zoom-in">
+        <i class="fa-solid fa-shield-halved"></i>
+        <h4>Safety First</h4>
+        <p>Professionally trained drivers and fully insured rides.</p>
+      </div>
+      <div class="feature-item" data-aos="zoom-in" data-aos-delay="200">
+        <i class="fa-solid fa-star"></i>
+        <h4>Premium Comfort</h4>
+        <p>Luxury vehicles equipped with AC, WiFi & entertainment.</p>
+      </div>
+      <div class="feature-item" data-aos="zoom-in" data-aos-delay="400">
+        <i class="fa-solid fa-route"></i>
+        <h4>Nationwide Coverage</h4>
+        <p>From Karachi to Khunjerab, we’ve got you covered.</p>
+      </div>
+    </div>
+  </section>
+
+  <%- include("./partials/footer") %>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init({ duration: 1000, once: true });</script>
+</body>
+</html>

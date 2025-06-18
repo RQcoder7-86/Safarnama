@@ -1,0 +1,151 @@
+<style>
+  /* Font Awesome already included */
+
+  footer {
+    padding: 40px 20px;
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    color: #5e6282;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    max-width: 1250px;
+    margin: auto;
+  }
+
+  footer h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  footer ul {
+    list-style: none;
+    padding: 0;
+    line-height: 1.8;
+  }
+
+  footer ul li a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+  }
+
+  footer ul li a:hover {
+    color: #007BFF;
+  }
+
+  .footer-brand {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #000;
+  }
+
+  .social-icon {
+    margin-right: 10px;
+    border-radius: 100px;
+    background-color: white;
+    padding: 0.7rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+  }
+
+  .facebook { color: #4267B2; }
+  .facebook:hover { background-color: #4267B2; color: white; }
+
+  .instagram { color: #E1306C; }
+  .instagram:hover { background-color: #E1306C; color: white; }
+
+  .twitter { color: #1DA1F2; }
+  .twitter:hover { background-color: #1DA1F2; color: white; }
+
+  .whatsapp { color: #25D366; }
+  .whatsapp:hover { background-color: #25D366; color: white; }
+
+  /* Footer Bottom */
+  .footer-bottom {
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 0.8rem;
+    color: #666;
+    background: #f9f9f9;
+  }
+
+  @media (max-width: 768px) {
+    footer {
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      text-align: center;
+    }
+    .footer-brand {
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    footer {
+      grid-template-columns: 1fr;
+    }
+    .social-icon {
+      margin: 5px;
+    }
+  }
+</style>
+
+<!-- ✅ Responsive Footer -->
+<footer>
+  <!-- Branding -->
+  <div>
+    <div class="footer-brand"><i class="fa-solid fa-plane"></i> SafarNama</div>
+    <div>
+      Book your trip in minutes,<br>
+      get full control for much longer.
+    </div>
+  </div>
+
+  <!-- Quick Links -->
+  <div>
+    <h4>Quick Links</h4>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/packges">Packages</a></li>
+      <li><a href="/book">Booking</a></li>
+      <li><a href="/destintation">Destinations</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Contact -->
+  <div>
+    <h4>Contact</h4>
+    <p>Email: info@safarnama.com</p>
+    <p>Phone: +92-345-5348821</p>
+    <p>Address: Abbottabad, PK</p>
+  </div>
+
+  <!-- Social Media -->
+  <div>
+    <h4>Follow Us</h4>
+    <div>
+      <a href="#" class="social-icon facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" class="social-icon instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" class="social-icon twitter"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="#" class="social-icon whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!-- Bottom Line -->
+<div class="footer-bottom">
+  © 2025 SafarNama. All rights reserved.
+</div>

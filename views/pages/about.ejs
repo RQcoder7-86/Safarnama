@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SafarNama - About</title>
+<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <!-- AOS Animation Library -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <%- include('partials/preloderi-mini') %>
+<%- include('partials/header') %>
+
+
+  <%- include('partials/header') %>
+
+  <!-- Hero Section with Video -->
+  <section class="about-hero-pro">
+    <video autoplay muted loop playsinline class="bg-video">
+      <source src="/videos/video2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="overlay"></div>
+
+    <div class="glass-content">
+      <h1><span>SafarNama</span></h1>
+      <p>Let every journey become a story worth sharing.</p>
+      <a href="#our-story" class="btn-hero">Explore Our Story</a>
+    </div>
+
+    <div class="scroll-down">
+      <span>&#8595;</span>
+    </div>
+  </section>
+
+  <!-- Our Story Section -->
+  <section id="our-story" class="our-story">
+    <h2>Our Story</h2>
+    <p>We began SafarNama with one dream — to turn every traveler into a storyteller...</p>
+  </section>
+
+  <!-- Who Am I Section -->
+  <section class="about-who container my-5 d-flex flex-wrap align-items-center">
+    <!-- Image Left -->
+    <div class="about-img col-md-6 p-3" data-aos="flip-down" data-aos-duration="1000">
+      <img src="/images/solo.webp" alt="SafarNama Journey" class="custom-about-img">
+    </div>
+
+    <!-- Text Right -->
+    <div class="about-text col-md-6 p-3" data-aos="fade-right" data-aos-duration="1000">
+      <h2 class="mb-3">Who Am I</h2>
+      <p>
+        At <strong>SafarNama</strong>, we're passionate about creating extraordinary travel experiences that go beyond expectations.
+      </p>
+      <p>
+        Whether you're dreaming of mountains, beaches, or cities full of life, we design each journey with personal care, safety, and unforgettable memories.
+      </p>
+      <p>
+        Since 2020, we've helped thousands explore the world with comfort, joy, and confidence.
+      </p>
+    </div>
+  </section>
+  <!-- Why Choose Us Section -->
+<section class="why-choose-us py-5" style="background: #f0f0f0;">
+  <div class="container text-center">
+    <h2 class="mb-5" data-aos="fade-up" data-aos-duration="1000">Why Choose Us</h2>
+    <div class="row justify-content-center">
+      <!-- Feature 1 -->
+      <div class="col-md-4 mb-4" data-aos="fade-right" data-aos-duration="1000">
+        <div class="feature-box p-4 shadow rounded bg-white h-100">
+          <i class="fas fa-map-marked-alt fa-3x mb-3 text-primary"></i>
+          <h4 class="mb-2">Handpicked Destinations</h4>
+          <p>We explore and select the most unique and beautiful spots just for you.</p>
+        </div>
+      </div>
+      <!-- Feature 2 -->
+      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1000">
+        <div class="feature-box p-4 shadow rounded bg-white h-100">
+          <i class="fas fa-headset fa-3x mb-3 text-primary"></i>
+          <h4 class="mb-2">24/7 Support</h4>
+          <p>Our friendly team is available day and night to help with your journey.</p>
+        </div>
+      </div>
+      <!-- Feature 3 -->
+      <div class="col-md-4 mb-4" data-aos="fade-right" data-aos-duration="1000">
+        <div class="feature-box p-4 shadow rounded bg-white h-100">
+          <i class="fas fa-smile-beam fa-3x mb-3 text-primary"></i>
+          <h4 class="mb-2">Thousands of Happy Travelers</h4>
+          <p>We’ve helped thousands create unforgettable memories across the globe.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Mission and Vision Section -->
+<section class="mission-vision py-5">
+  <div class="container">
+    <h2 class="text-center mb-5" data-aos="fade-up" data-aos-duration="1000">Our Mission & Vision</h2>
+    <div class="row">
+      <!-- Mission -->
+      <div class="col-md-6 mb-4" data-aos="fade-up-right" data-aos-duration="1000">
+        <div class="mv-box p-4 rounded shadow-sm bg-white h-100">
+          <i class="fas fa-bullseye fa-3x text-success mb-3"></i>
+          <h4>Our Mission</h4>
+          <p>To inspire travel lovers with authentic and enriching experiences that connect people with cultures, nature, and the world.</p>
+        </div>
+      </div>
+      <!-- Vision -->
+      <div class="col-md-6 mb-4" data-aos="fade-down-right" data-aos-duration="1000">
+        <div class="mv-box p-4 rounded shadow-sm bg-white h-100">
+          <i class="fas fa-eye fa-3x text-info mb-3"></i>
+          <h4>Our Vision</h4>
+          <p>To be the most trusted and innovative travel platform that turns every journey into a lifelong memory.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Meet the Founder Section -->
+<section class="founder-section py-5">
+  <div class="container">
+    <h2 class="text-center mb-5" data-aos="fade-down">Meet the Founder</h2>
+    <div class="row align-items-center">
+      <!-- Founder Image -->
+      <div class="col-md-5 text-center mb-4" data-aos="fade-right" data-aos-duration="1000">
+        <img src="/images/im.jpg" alt="Founder of SafarNama" class="img-fluid rounded-circle shadow" style="max-width: 250px;">
+      </div>
+
+      <!-- Founder Info -->
+      <div class="col-md-7" data-aos="fade-up" data-aos-duration="1000">
+        <h4>Due to some privacy raesons i cannot paste real founder picture !!</h4>
+        <h4>Hello! I'm RQcoder or Qasim Usman from 9th Tuilp I use backend half Inshallah after 5 months I will rebuild this website with full frontend and backend</h4>
+        <p>I started SafarNama with a passion for storytelling through travel. Every destination we offer has been carefully crafted for memories that last a lifetime.</p>
+        <blockquote class="blockquote">
+          <p class="mb-0">"Travel far enough, you meet yourself."</p>
+        </blockquote>
+
+        <!-- Skills -->
+        <h5 class="mt-4">My Skills</h5>
+        <div class="skills d-flex flex-wrap gap-2 mt-2">
+          <span class="badge skill-badge" data-aos="zoom-in">HTML</span>
+          <span class="badge skill-badge" data-aos="zoom-in" data-aos-delay="100">CSS</span>
+          <span class="badge skill-badge" data-aos="zoom-in" data-aos-delay="200">JavaScript</span>
+          <span class="badge skill-badge" data-aos="zoom-in" data-aos-delay="300">Node.js</span>
+          <span class="badge skill-badge" data-aos="zoom-in" data-aos-delay="400">Express.js</span>
+          <span class="badge skill-badge" data-aos="zoom-in" data-aos-delay="600">EJS</span>
+          <span class="badge skill-badge" data-aos="zoom-in" data-aos-delay="700">REST APIs</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <%- include('partials/footer') %>
+
+  <!-- AOS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>
